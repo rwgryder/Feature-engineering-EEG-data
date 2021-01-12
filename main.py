@@ -4,7 +4,7 @@ import pandas as pd
 import genetic
 import seaborn as sns
 import matplotlib.pyplot as plt
-import mutual_info_test
+import mutual_info
 from sklearn.decomposition import PCA
 from sklearn.metrics import accuracy_score
 from sklearn.naive_bayes import GaussianNB
@@ -184,7 +184,7 @@ for i in range(0,10):
     
     #mi = np.zeros(10)
     #for k in range(0,10):
-    #    mi[k] = mutual_info_test.mutual_information_2d(gp_X_train[:,k],y_train)
+    #    mi[k] = mutual_info.mutual_information_2d(gp_X_train[:,k],y_train)
     #Mi[i] = np.mean(mi)
     
     # get 5 metrics from 5 models
